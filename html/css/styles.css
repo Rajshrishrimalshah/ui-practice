@@ -1,0 +1,140 @@
+* {
+  box-sizing: content-box;
+  font-size: 1rem;
+}
+body,
+html {
+
+    height: 100%;
+    background-image: url("../images/products/background.jpg");
+    margin: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 100px;
+  right: 100px;
+  border: 1px, solid, gray;
+  background: #fff;
+}
+
+.co__header {
+  display: flex;
+}
+.container__checkout {
+  padding: 10px 16px;
+  margin-right: 200px;
+}
+
+.container__icon {
+  padding: 10px 16px;
+  flex-direction: row-reverse;
+}
+
+.container__breadcrumb {
+  flex: 1;
+}
+
+.container__icon {
+  display: flex;
+  justify-content: flex-end;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  
+
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color: black;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumb--PM {
+  font-weight: bold;
+}
+
+
+.co__body { 
+  display: flex; 
+  border-top: 1px solid grey;
+}
+
+.wallet__card__wallet {
+  padding: 10px 16px;
+  border-bottom: 1px solid grey;
+}
+
+.card__wallet {
+  flex: 5;
+}
+
+.cards {
+  display: flex;
+  padding: 20px;
+}
+
+.cards  div {
+  padding-left: 15px;
+  max-width: 100%;
+}
+
+.wallet__card { 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.mmyy {
+  display: flex;
+  max-width: 32%;
+  margin: 10px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  box-sizing: border-box; 
+}
+
+.mm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mintext input[type=text] {
+  width: 50%;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  box-sizing: border-box; 
+  margin: 0 auto;
+  margin-right: 10px;
+}
+
+.cvv {
+  text-align: center;
+}
+
+
+.payment_receipt {
+   width: 300px; 
+  height: 100px; 
+  border: 1px solid blue;
+  flex: 4;
+}
