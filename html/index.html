@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +14,13 @@
 
   <link rel=" stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    
+
 </head>
+
 <body>
-  
+
   <div class="container">
-    
+
     <div class="co__header">
       <div class="container__checkout">checkout</div>
 
@@ -31,7 +33,7 @@
       </div> <!-- container__breadcrumb-->
 
       <span class="container__icon">
-        <i class="fa fa-window-close" aria-hidden="true"></i> 
+        <i class="fa fa-window-close" aria-hidden="true"></i>
       </span> <!-- container__icon-->
 
     </div> <!-- co__header -->
@@ -42,56 +44,164 @@
       <section class="card__wallet">
 
         <div class="wallet__card">
-            <div class="wallet__card__wallet"> Wallet</div>
+          <div class="wallet__card__wallet"> Wallet</div>
         </div> <!-- wallet__card-->
 
         <div class="cards">
-        
+
           <div class="cards__discover">
             <img src="./images/cards/discover.png" alt="discover" height="130px">
           </div>
 
           <div class="cards__mastercard">
-              <img src="./images/cards/mastercard.png" alt="mastercard"   height="130px">
+            <img src="./images/cards/mastercard.png" alt="mastercard" height="130px">
           </div>
 
           <div class="cards__visa">
-              <img src="./images/cards/visa.png" alt="visa"  height="130px">
+            <img src="./images/cards/visa.png" alt="visa" height="130px">
           </div>
-          
-          <br/>
+
+          <br />
         </div> <!-- cards -->
 
-          <div class="wallet__card">
-              <div class="wallet__card__wallet"> New Card</div>
-          </div> <!-- wallet__card-->
-          
-          <div class="form">
-              <div class="form__name"> 
-                  <input type="text" placeholder="Name on card">
-              </div>
-                <div class="form__number">
-                    <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
-                </div>
+        <div class="wallet__card">
+          <div class="wallet__card__wallet"> New Card</div>
+        </div> <!-- wallet__card-->
 
-                <div class="mmyy">
-                  <div class="mm mintext">
-                      <input type="text" placeholder="MM/YY">
-                      <input type="text" class="cvv" placeholder="CVV">
-                  </div>
-                </div>
+        <div class="form">
+          <div class="form__name">
+            <input type="text" placeholder="Name on card">
+          </div>
+          <div class="form__number">
+            <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+          </div>
+
+          <div class="mmyy">
+
+            <div class="mm mintext">
+              <input type="text" placeholder="MM/YY">
+              <input type="text" class="cvv" placeholder="CVV">
             </div>
+            <!--mintext -->
+
+          </div> <!-- mmyy -->
+          <button class="button button2">Continue</button>
+        </div> <!-- form -->
 
       </section> <!-- card__wallet -->
 
 
 
 
-        <div class="payment_receipt"></div>
-      </div>
+      <div class="payment_receipt">
+        <div class="purchased-items">
+          <div class="pa_container">
+
+            <div class="c-item__img">
+              <img src="./images/products/mobile-holder.jpg" alt="Mobile Holder" width="50px" height="50px"
+                style="margin-left:5px; padding: 5px">
+            </div>
+
+            <div class="mobile__info">
+              <p> Mobile Holder </p>
+              <p> Black </p>
+              <p> Quantity : 1 </p>
+            </div>
+
+            <div class="price__co">
+              <p class="mobile__holder--price">$ 10.00</p>
+            </div>
+          </div> <!-- #1 pa_container-->
+
+          <div class="pa_container">
+
+            <div class="c-item__img">
+              <img src="./images/products/rado.jpg" alt="rado" width="50px" height="50px"
+                style="margin-left:5px; padding: 5px">
+            </div>
+
+            <div class="mobile__info">
+              <p> Rado </p>
+              <p> Black </p>
+              <p> Quantity : 1 </p>
+            </div>
+
+            <div class="price__co">
+              <p class="mobile__holder--price">$ 200.00</p>
+            </div>
+
+          </div> <!-- #2 pa_container-->
+
+          <div class="pa_container">
+
+            <div class="c-item__img">
+              <img src="./images/products/usb-c-2-micro.jpeg" alt="micro-usb" width="50px" height="50px"
+                style="margin-left:5px; padding: 5px">
+            </div>
+
+            <div class="mobile__info">
+              <p> Micro-Usb </p>
+              <p> Black </p>
+              <p> Quantity : 1 </p>
+            </div>
+
+            <div class="price__co">
+              <p class="mobile__holder--price">$ 20.00</p>
+            </div>
+          </div> <!-- #3 pa_container-->
+
+
+          <div class="pa_container">
+              <div class="c-item__img">
+                <img src="./images/products/hard-case.jpg" alt="hard-case" width="50px" height="50px"
+                  style="margin-left:5px; padding: 5px">
+              </div>
+
+
+            <div class="mobile__info">
+              <p> Mobile Hard Case </p>
+              <p> Black </p>
+              <p> Quantity : 1 </p>
+            </div>
+
+            <div class="price__co">
+              <p class="mobile__holder--price">$ 20.00</p>
+            </div>
+          </div> <!-- #4 pa_container-->
+
+        </div> <!-- purchased-items -->
+
+        <div class="total">
+          <div class="subtotal">
+            <p style="flex: 1;"> Sub Total </p>
+            <p>$ 100.00</p>
+          </div>
+
+          <div class="subtotal">
+            <p style="flex: 1;"> Shipping </p>
+            <p>$ 10.00</p>
+          </div>
+
+          <div class="subtotal subtotal--last">
+            <p style="flex: 1;"> Taxes </p>
+            <p>$ 5.00</p>
+          </div>
+
+          <div class="final__total">
+            <div class="subtotal">
+              <p style="flex: 1;"> Total </p>
+              <p>$ 115.00</p>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- payment_receipt -->
+
+    </div> <!-- co body -->
 
 
   </div> <!-- container -->
 
 </body>
+
 </html>
